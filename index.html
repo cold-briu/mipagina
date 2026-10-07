@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>María Guadalupe</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
 
         :root {
-            --bg-color: #FAFAF5; /* Crema muy claro/arena */
-            --text-color: #2F3E35; /* Verde bosque profundo para el texto */
-            --accent-color: #A3B899; /* Verde hoja suave */
-            --accent-hover: #8A9D80;
-            --section-bg: #F0EBE1; /* Tierra/arcilla aún más suave y limpio */
-            --font-headings: 'Playfair Display', serif; /* Estilo botánico y elegante */
-            --font-main: 'Plus Jakarta Sans', sans-serif; /* Fuente moderna, geométrica y limpia */
+            --bg-color: #111512; /* Verde bosque muy oscuro, casi negro */
+            --text-color: #EAECE8; /* Crema claro/ceniza */
+            --accent-color: #7A9B80; /* Verde salvia oscuro */
+            --accent-hover: #91B097; /* Verde salvia más claro */
+            --section-bg: #1A201C; /* Verde oscuro un poco más claro para la tarjeta */
+            --font-headings: 'Playfair Display', serif; 
+            --font-main: 'Plus Jakarta Sans', sans-serif; 
         }
 
         * {
@@ -39,19 +39,19 @@
         }
 
         section {
-            padding: 120px 0; /* Más espacio en blanco (aire), estilo moderno */
+            padding: 120px 0; 
         }
 
         h1, h2 {
             font-family: var(--font-headings);
             font-weight: 400;
             margin-bottom: 24px;
-            color: #1A261D;
+            color: #F4F6F4; /* Blanco/Crema brillante para títulos */
         }
 
         h1 {
-            font-size: clamp(3rem, 8vw, 5rem); /* Tipografía fluida grande e impactante */
-            letter-spacing: -0.02em; /* Espaciado moderno */
+            font-size: clamp(3rem, 8vw, 5rem); 
+            letter-spacing: -0.02em; 
             line-height: 1.1;
         }
 
@@ -63,7 +63,7 @@
         p {
             font-size: 1.125rem;
             margin-bottom: 20px;
-            color: #4A5C50;
+            color: #A9B5AC; /* Tono verde-grisáceo claro para subtítulos y textos */
             font-weight: 400;
         }
 
@@ -77,13 +77,13 @@
             margin-bottom: 16px;
             position: relative;
             padding-left: 32px;
-            color: #4A5C50;
+            color: #A9B5AC; /* Igual al texto secundario */
             font-weight: 400;
             display: flex;
             align-items: center;
         }
 
-        /* Viñeta de hoja abstracta hecha con CSS (Moderno) */
+        /* Viñeta hoja para modo oscuro */
         ul li::before {
             content: ""; 
             position: absolute;
@@ -91,7 +91,7 @@
             width: 14px;
             height: 14px;
             background-color: var(--accent-color);
-            border-radius: 50% 50% 50% 0; /* Forma de hoja */
+            border-radius: 50% 50% 50% 0; 
             transform: rotate(-45deg);
             opacity: 0.9;
         }
@@ -102,21 +102,21 @@
             align-items: center;
             justify-content: center;
             background-color: var(--accent-color);
-            color: #fff;
+            color: #111512; /* Texto casi negro para contrastar con el fondo verde salvia */
             padding: 16px 44px;
             text-decoration: none;
             font-size: 1.05rem;
-            font-weight: 500;
-            border-radius: 100px; /* Estilo píldora moderna */
-            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Animación fluida premium */
+            font-weight: 600;
+            border-radius: 100px; 
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
             letter-spacing: 0.02em;
-            box-shadow: 0 8px 24px rgba(163, 184, 153, 0.25); /* Sombra moderna sutil */
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); 
         }
 
         .btn:hover {
             background-color: var(--accent-hover);
             transform: translateY(-4px);
-            box-shadow: 0 14px 32px rgba(163, 184, 153, 0.4);
+            box-shadow: 0 14px 32px rgba(122, 155, 128, 0.2); /* Suave resplandor verde oscuro */
         }
 
         .hero-links {
@@ -135,7 +135,7 @@
 
         .about {
             background-color: var(--section-bg);
-            border-radius: 40px; /* Tarjeta flotante moderna */
+            border-radius: 40px; 
             margin: 0 20px; 
         }
 
@@ -145,7 +145,7 @@
 
         /* Footer */
         footer {
-            background-color: #E2DBD0;
+            background-color: #0E110F; /* El fondo más oscuro de todos */
             padding: 80px 0 40px;
             text-align: center;
             border-radius: 40px 40px 0 0;
@@ -169,7 +169,6 @@
             padding-bottom: 4px;
         }
 
-        /* Subrayado animado moderno para los links del footer */
         .social-links a::after {
             content: '';
             position: absolute;
@@ -190,14 +189,14 @@
         
         .footer-text {
             font-size: 0.95rem;
-            color: #6C7A70;
+            color: #5C6E61; /* Gris oscuro sutil */
         }
         
         /* Media Queries para Mobile */
         @media (max-width: 600px) {
             .about {
                 margin: 0;
-                border-radius: 30px 30px 0 0; /* Pierde márgenes en celular para pantalla completa */
+                border-radius: 30px 30px 0 0; 
             }
             section {
                 padding: 80px 0;
